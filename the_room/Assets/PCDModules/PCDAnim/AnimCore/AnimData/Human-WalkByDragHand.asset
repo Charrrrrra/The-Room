@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195581be8bf6828479f633e260833cd3, type: 3}
+  m_Name: Human-WalkByDragHand
+  m_EditorClassIdentifier: 
+  keyFrameList:
+  - keyFrameName: Idle
+    keyFramePrefab: {fileID: 3963081659854756517, guid: aab0d4d627ba0414c933f9064c17c256, type: 3}
+  - keyFrameName: LStep
+    keyFramePrefab: {fileID: 2420094055301954716, guid: ec6495e7386494d4982dc4b56c44cc09, type: 3}
+  - keyFrameName: RStep
+    keyFramePrefab: {fileID: 590744980742256375, guid: a70818582f8fb7d4e80a00299477baaa, type: 3}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195581be8bf6828479f633e260833cd3, type: 3}
+  m_Name: HermitCrab-Walk
+  m_EditorClassIdentifier: 
+  keyFrameList:
+  - keyFrameName: Idle
+    keyFramePrefab: {fileID: 3963081659854756517, guid: fdc5149934ec74a479b69901b41a65ed, type: 3}
+  - keyFrameName: LStep
+    keyFramePrefab: {fileID: 2420094055301954716, guid: b7fdee8047ea79e469c9fcc0d9f89861, type: 3}
+  - keyFrameName: RStep
+    keyFramePrefab: {fileID: 590744980742256375, guid: a1010382aaec4d147a0e4f3d91d2bbcf, type: 3}
