@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62702d26ad95d1b4eb7b0398285372a9, type: 3}
+  m_Name: SimWaterSetting-Water
+  m_EditorClassIdentifier: 
+  waterMergeDisOffset: 0.1
+  waterMergeMaxRadius: 2
+  waterDragStrengthPerInsetDis: 1
+  groundDragStrengthPerRadius: 5
+  waterMixSpeedPerInsetDis: 0.02
+  waterEvapSpeed: 0.01
+  waterEvapRadius: 0.35
+  waterDrainSpeed: 0.3
+  waterDrainRadius: 0.35

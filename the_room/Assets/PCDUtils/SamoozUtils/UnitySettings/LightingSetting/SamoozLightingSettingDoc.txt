@@ -1,0 +1,10 @@
+-- to setting a sokpop-like enviroment lighting
+step1:
+    remove the skybox
+step2:
+    set environment lighting mode to color and set HSV color's V to 27 or approximate value
+step3
+    if your cartoon shader dont have WrappedLight feature 
+    set environment reflections source to Custom and drag FakeEnvRefTex_WrappedLight on it
+    in general FakeEnvRefTex_WrappedLight would be stored in this folder
+

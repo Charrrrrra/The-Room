@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3936295651888221812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947621637120927641}
+  - component: {fileID: 343128480818999947}
+  m_Layer: 0
+  m_Name: SDFsWaterRender-1Cam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &947621637120927641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936295651888221812}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.78, y: 0.01, z: 22.22}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2499228196610375797}
+  - {fileID: 6037276444082529428}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &343128480818999947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936295651888221812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f306d410307d6904082f3bca344faeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useUpdate: 1
+  useLateUpdate: 1
+  useFixedUpdate: 0
+  allowedError: {x: 0, y: 0, z: 0}
+  followTarget: {fileID: 0}
+  followOffset: {x: 0, y: 0, z: 0}
+  localOffset: 0
+  lerp: 0
+  lerpSpeed: 5
+  lockY: 1
+  lockYValue: 0.01
+--- !u!1001 &1020395439796025143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 947621637120927641}
+    m_Modifications:
+    - target: {fileID: 2378049028528509800, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 1179648
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710635
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071073
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501037050815429633, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_Name
+      value: SDFsWaterCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611391942945112521, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2359296
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 8661260577944980006, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+--- !u!4 &2499228196610375797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3208294608071194434, guid: 64c47c5356ac1014a89e172b0879d322, type: 3}
+  m_PrefabInstance: {fileID: 1020395439796025143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7752526839804254672
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 947621637120927641}
+    m_Modifications:
+    - target: {fileID: 3413221999173564606, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 06ca087eddd836540b9ab2826358f152, type: 2}
+    - target: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0010000467
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412189358365854629, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d235feb3033f169418ef7f9d12841ff6, type: 2}
+    - target: {fileID: 4468288172272031582, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365910936288612485, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377240302605354139, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Name
+      value: SDFsWaterPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377240302605354139, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Layer
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703970718732606625, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6703970718732606625, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bb6302b00d67e98439f670e4933d588f, type: 2}
+    - target: {fileID: 8072433927363645209, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+--- !u!4 &6037276444082529428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4061742078167203140, guid: 7ca5a759bf766674cbb3c44212200544, type: 3}
+  m_PrefabInstance: {fileID: 7752526839804254672}
+  m_PrefabAsset: {fileID: 0}
