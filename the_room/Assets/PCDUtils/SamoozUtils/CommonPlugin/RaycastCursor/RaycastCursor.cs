@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class RaycastCursor : SingletonMono<RaycastCursor>
 {
+    public enum MovementMode {
+        HardFollowTarget,
+        LerpToTarget,
+        MoveToTarget
+    }
+    [Header("Main Setting")]
+    public float defaultMoveSpeed = 2f;
+    public float defaultLerpSpeed = 2f;
+    public MovementMode defaultMovementMode = MovementMode.HardFollowTarget;
     public LayerMask focusLayer;
     public Transform focusingObj;
     public Transform cursor;
@@ -22,8 +31,26 @@ public class RaycastCursor : SingletonMono<RaycastCursor>
             hitInfo = firstHitableInfo;   
             focusingObj = hitInfo.collider.transform;
             Debug.DrawLine(hitInfo.point, hitInfo.point + hitInfo.normal, Color.red);
-            cursor.position = hitInfo.point;
+
+            // update cursor pos
+            if (defaultMovementMode.Equals(MovementMode.HardFollowTarget)) 
+            {
+                cursor.position = hitInfo.point;
+            } 
+            else if (defaultMovementMode.Equals(MovementMode.MoveToTarget)) 
+            {
+                Vector3 toTarget = hitInfo.point - cursor.position;
+                if (toTarget.magnitude > 0.1f) {
+                    float speed = toTarget.magnitude > defaultMoveSpeed * Time.deltaTime ? defaultMoveSpeed * Time.deltaTime : toTarget.magnitude;
+                    Vector3 velocity = toTarget.normalized * speed;
+                    cursor.position += velocity;
+                }
+            } else if (defaultMovementMode.Equals(MovementMode.LerpToTarget)) {
+                cursor.position = Vector3.Lerp(cursor.position, hitInfo.point, defaultLerpSpeed * Time.deltaTime);
+            }
+
             cursor.up = Vector3.up;
+
         } else {
             focusingObj = null;
         }

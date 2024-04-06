@@ -3997,6 +3997,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72803cbe0351d814185d65d9a53e2379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultMoveSpeed: 4
+  defaultLerpSpeed: 1
+  defaultMovementMode: 1
   focusLayer:
     serializedVersion: 2
     m_Bits: 67108919
