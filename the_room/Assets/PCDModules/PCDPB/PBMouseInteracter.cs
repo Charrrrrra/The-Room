@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PBMouseInteracter : MonoBehaviour
 {
+    public bool autoDrop;
+    public float autoDropTime = 5.0f;
     public PBPickable focusingPickable;
     public PBPickable pickingPickable;
     public Transform tarPickableObjTarget;
     public Joint pickingObjJoint;
     public bool isPicking => pickingObjJoint.connectedBody != null;
     private RaycastCursor raycastCursor;
+    private float autoDropTimeCount;
 
     void Start() {
         raycastCursor = RaycastCursor.TryGetInstance();
@@ -17,11 +20,21 @@ public class PBMouseInteracter : MonoBehaviour
 
     void Update() {
         UpdateFocusingPass();
-        if (Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse1)) {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            if (focusingPickable) {
+                Pick(focusingPickable);
+                autoDropTimeCount = 0;
+            }
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse0)) {
             if (isPicking) {
                 Drop();
-            } else if (focusingPickable) {
-                Pick(focusingPickable);
+            }
+        }
+        if (isPicking) {
+            autoDropTimeCount += Time.deltaTime;
+            if (autoDropTimeCount >= autoDropTime) {
+                Drop();
             }
         }
     }
