@@ -3989,7 +3989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e784bd74266b344aa6114afa90bdbf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoDrop: 0
+  autoDrop: 1
   autoDropTime: 5
   focusingPickable: {fileID: 0}
   pickingPickable: {fileID: 0}

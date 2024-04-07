@@ -31,7 +31,7 @@ public class PBMouseInteracter : MonoBehaviour
                 Drop();
             }
         }
-        if (isPicking) {
+        if (isPicking && autoDrop) {
             autoDropTimeCount += Time.deltaTime;
             if (autoDropTimeCount >= autoDropTime) {
                 Drop();
